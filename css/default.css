@@ -1,0 +1,312 @@
+/* 
+	------------------------------------
+	Title				: Nerdverk.com Website 
+	URL				: http://www.nerdverk.com/css/default.css
+	Author			: Onur Özer
+	Created			: 2007 June 11, Monday
+	Last Modified	: 2007 June 12, Tuesday
+	------------------------------------
+*/
+
+
+/*
+	----------------------------------- 
+	Sitewide
+	----------------------------------- 
+*/ 
+
+*{
+	padding:0;
+	margin:0;
+	}
+	
+body{
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:0.8em;
+	height:100%;
+	background-color:#ACB4B9;
+	margin:10px 0px 20px 0px;
+	}
+	
+p{
+	line-height:1.1em;
+	color:#999;
+	font-size:0.9em;
+	}
+h1{
+	color:#fff; /* changable */
+	font-size:1.6em;
+	margin-bottom:0.1em;
+	}
+h2 {color:#ccc;}
+
+a:link, a:visited{text-decoration:underline;color:#999;}
+a:hover{text-decoration:underline;color:#ccc;}
+a img{border:none;}
+	
+p.t{
+	text-transform:capitalize;
+	letter-spacing:0.12em;
+	font-size:0.8em!important;
+	color:#ccc!important;
+	margin-bottom:1.6em!important;
+}
+
+div.clearFix{clear:both;}
+
+
+/*
+	----------------------------------- 
+	Layout
+	----------------------------------- 
+*/ 
+
+#wrapper{
+	width:908px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+
+#container{
+	width:908px;
+	background:#FFFFFF url(../img/dropshadowCenter.gif) repeat-y 0px 0px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:10px;
+	}
+
+#dropshadowTop{
+	background:url(../img/dropshadowTop.gif) no-repeat;
+	height:4px;
+	overflow:hidden;
+	width:908px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+#dropshadowBottom{
+	background:url(../img/dropshadowBottom.gif) no-repeat;
+	height:4px;
+	overflow:hidden;
+	width:908px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+#canvas{
+	width:880px;
+	background:#484848 url(../img/canvasBg.gif) repeat-x left top;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:10px;
+	
+	}
+
+#left{
+	width:590px;
+	overflow:hidden;
+	float:left;
+}
+
+#right{
+	float:right;
+	width:290px;
+	background:url(../img/nerdverkGuyReflection.gif) no-repeat 99px top;
+	margin-bottom:5px;
+	}
+	
+#content{padding:40px 20px 0px 20px;}
+
+
+/*
+	----------------------------------- 
+	Header and Footer
+	----------------------------------- 
+*/ 
+
+#header{
+	background-color:#ACB4B9;
+	font-size:0.8em;	
+	color:#fff;
+	padding:0px 10px 5px 40px;
+	}
+#header img{vertical-align:top;}
+#phoneNumber{float:left;}
+#langSelect{text-align:right;float:right;}
+
+#footer{
+	background-color:#ACB4B9;
+	font-size:0.8em;	
+	padding: 5px 10px 0px 10px;
+	color:#FFFFFF;
+}
+#footer img{vertical-align:top;margin-left:3px;}
+#footer a, #footer a:link, #footer a:visited{color:#fff;}
+#footer a:hover, #footer a:active{color:#eee;}
+#validation{float:left;}
+#colourSelect{text-align:right;float:right;}
+
+
+/*
+	----------------------------------- 
+	Introduction
+	----------------------------------- 
+*/ 
+ 
+#top{
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+	height:400px;
+	background:url(../img/nerdverkGuy.gif) no-repeat  right top;
+	}
+
+#greetings{
+	width:560px;
+	padding:70px 0px 0px 40px;
+	}
+#greetings img{margin-bottom:60px;}
+#greetings h1{color:#ACB4B9;}
+#greetings p {
+	font-size:1.2em;
+	color:#666;
+	font-weight:normal;
+	margin-bottom:1.1em;
+	}
+
+	
+/*
+	----------------------------------- 
+	Portfolio Column
+	----------------------------------- 
+*/ 
+
+#portfolio{margin:40px 0px 0px 30px;}
+#portfolio h2{font-size:1.2em;}
+#portfolio ul{list-style:none;}
+#portfolio ul li{
+	width:250px;
+	margin-right:30px;
+	margin-bottom:30px;
+	float:left;
+	background:url(../img/worknameBg.gif) repeat-x 0px 150px;
+	}
+
+
+#portfolio ul li a img{margin-bottom:15px;}
+
+/*
+	----------------------------------- 
+	Content Column
+	----------------------------------- 
+*/ 
+
+#content h2{
+	font-size:1.4em;
+	font-weight:normal;
+	margin-bottom:0.2em;
+	}
+
+hr {display:none;}
+div.hr{
+	margin-top:10px;
+	margin-bottom:20px;
+	border-bottom:1px dotted #656565;
+	}
+
+/*
+	----------------------------------- 
+	Section : Jobs
+	----------------------------------- 
+*/ 
+
+#sectionJobs h2{font-size:1.2em;}
+#sectionJobs p{margin-bottom:15px;}
+
+/*
+	----------------------------------- 
+	Section : Projects
+	----------------------------------- 
+*/ 
+
+div.projectBox{
+	background-color:#3e3b35;
+	padding:15px;
+	margin-bottom:15px;
+	}
+div.status{
+	background-position:right top;
+	background-repeat:no-repeat;
+	}
+
+div.soon{background-image:url(../img/tag_red_soon.gif);}
+div.alpha{background-image:url(../img/tag_yellow_alpha.gif);}
+div.beta{background-image:url(../img/tag_orange_beta.gif);}
+div.online{background-image:url(../img/tag_green_online.gif);}
+
+/*
+	----------------------------------- 
+	Section : From the Blog
+	----------------------------------- 
+*/ 
+
+blockquote{
+	background-color:#3a3a3a;
+	padding:15px;
+	color:#999;
+	font-weight:bold;
+	}
+
+#bloglink{
+	vertical-align:bottom;
+	margin-left:3px;
+	}
+	
+p#blogPostData{
+	font-weight:normal;
+	color:#666;
+	font-size:0.9em;
+	margin:2px 0px 0px 0px;
+	}
+
+#quoteTriangle{margin-left:200px;}
+
+
+/*
+	----------------------------------- 
+	Section : Contact
+	----------------------------------- 
+*/ 
+
+#content em{
+	font-style:normal;
+	margin-right:5px;
+	color:#ccc;
+	}
+
+
+/*
+	----------------------------------- 
+	Section : Stay Updated
+	----------------------------------- 
+*/ 
+
+#theform{
+	margin-bottom:10px;
+	}
+#theform img{
+	vertical-align:middle;
+	margin-right:5px;
+	}
+input.inputEmail{
+	width:242px;
+	padding:2px;
+	border:2px solid #fff;
+	margin-bottom:5px;
+	/*error :border:2px solid #eee; */
+	color:#3a3a3a;
+	}
+input.submitButton{
+	width:150px;
+	margin-top:5px;
+	}
